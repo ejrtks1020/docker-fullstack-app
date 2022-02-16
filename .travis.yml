@@ -23,6 +23,7 @@ after_success:
   - docker push ejrtks1020/docker-nginx
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: "ap-northeast-2"
   app: "docker-fullstack-app"
